@@ -28,6 +28,10 @@ public class SqList<T> extends AbstractList<T> {
         return size == 0;
     }
 
+    /**
+     * 清空列表
+     */
+
     @Override
     public void cleanList() {
         for (int i = 0; i < size; i++) {
