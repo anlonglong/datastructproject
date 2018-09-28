@@ -27,5 +27,7 @@ public class Main {
         System.out.println("delete element is = "+integer2);
         System.out.println("length = " + sqList.length());
         System.out.println(sqList.toString());
+        int index = sqList.locationElement(7);
+        System.out.println("index = " + index);
     }
 }
