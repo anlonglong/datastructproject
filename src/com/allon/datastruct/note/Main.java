@@ -1,6 +1,6 @@
 package com.allon.datastruct.note;
 
-import com.allon.datastruct.note.base.SqList;
+import com.allon.datastruct.note.sequence.SqList;
 
 public class Main {
 

@@ -1,5 +1,7 @@
-package com.allon.datastruct.note.base;
+package com.allon.datastruct.note.sequence;
 
+
+import com.allon.datastruct.note.base.AbstractList;
 
 import java.util.Arrays;
 
