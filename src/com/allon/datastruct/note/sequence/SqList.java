@@ -30,7 +30,10 @@ public class SqList<T> extends AbstractList<T> {
 
     @Override
     public void cleanList() {
-
+        for (int i = 0; i < size; i++) {
+            data[i] = null;
+        }
+        size = 0;
     }
 
     @Override
@@ -43,7 +46,14 @@ public class SqList<T> extends AbstractList<T> {
 
     @Override
     public int locationElement(T element) {
-        return 0;
+         int index = -1;
+         for (int i = 0; i < size; i++) {
+             if (element == data[i]) {
+                 index = i;
+                 break;
+             }
+         }
+        return index;
     }
 
     @Override
