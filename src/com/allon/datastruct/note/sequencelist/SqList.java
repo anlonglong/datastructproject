@@ -1,4 +1,4 @@
-package com.allon.datastruct.note.sequence;
+package com.allon.datastruct.note.sequencelist;
 
 
 import com.allon.datastruct.note.base.AbstractList;
