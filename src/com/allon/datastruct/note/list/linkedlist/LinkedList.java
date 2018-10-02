@@ -1,4 +1,4 @@
-package com.allon.datastruct.note.linkedlist;
+package com.allon.datastruct.note.list.linkedlist;
 
 import com.allon.datastruct.note.base.Operation;
 

@@ -1,4 +1,4 @@
-package com.allon.datastruct.note.circlelinklist;
+package com.allon.datastruct.note.list.circlelinklist;
 
 import com.allon.datastruct.note.base.AbstractList;
 
