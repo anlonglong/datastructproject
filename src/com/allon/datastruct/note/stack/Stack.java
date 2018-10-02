@@ -4,7 +4,7 @@ package com.allon.datastruct.note.stack;
 public class Stack<T> {
 
 private Object[] dataSource = new Object[10];
-private int top = -1;
+private int top = -1;//指向栈顶的指针
 private int size;
 
     public Stack() {
