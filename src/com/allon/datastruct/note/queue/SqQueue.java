@@ -27,7 +27,7 @@ public class SqQueue<E> {
 
         dataSource[rear] = e;
         /**
-         * rear的位子后移，若到最后则转到数组的头部。
+         * rear的位置后移，若到最后则转到数组的头部。
          */
         rear = (rear + 1) % dataSource.length;
     }

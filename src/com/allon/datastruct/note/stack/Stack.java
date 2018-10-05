@@ -8,9 +8,10 @@ private int top = -1;//指向栈顶的指针
 private int size;
 
     public Stack() {
+
     }
 
-    public void push(T data) {
+    public synchronized void push(T data) {
         //栈的存储元素的下表从0开始，所以减一
         if (top == dataSource.length - 1) {
             throw new IllegalStateException("栈已经满了");
@@ -21,7 +22,7 @@ private int size;
         size++;
     }
 
-    public T pop() {
+    public synchronized T pop() {
         if (top == -1) {
             throw new IllegalStateException("栈为空");
         }
