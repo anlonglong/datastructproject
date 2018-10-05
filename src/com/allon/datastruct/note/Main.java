@@ -1,9 +1,12 @@
 package com.allon.datastruct.note;
 
+import com.allon.datastruct.note.linkquene.LinkQuene;
 import com.allon.datastruct.note.list.linkedlist.LinkedList;
 import com.allon.datastruct.note.list.sequencelist.SqList;
 import com.allon.datastruct.note.queue.SqQueue;
 import com.allon.datastruct.note.stack.Stack;
+
+import java.util.Queue;
 
 public class Main {
 
@@ -12,9 +15,17 @@ public class Main {
 //        linkList();
 //        stackTest();
 
-        queneTest();
-
-
+//        queneTest();
+        LinkQuene<Integer> linkQuene = new LinkQuene<>();
+        linkQuene.enQueue(1);
+        linkQuene.enQueue(2);
+        linkQuene.enQueue(3);
+        linkQuene.enQueue(4);
+        linkQuene.enQueue(5);
+        System.out.println("linkQuene.getSize() = " + linkQuene.getSize());
+        System.out.println("linkQuene.deQueue() = " + linkQuene.deQueue());
+        System.out.println("linkQuene.deQueue() = " + linkQuene.deQueue());
+        System.out.println("linkQuene.deQueue() = " + linkQuene.deQueue());
     }
 
     private static void queneTest() {
