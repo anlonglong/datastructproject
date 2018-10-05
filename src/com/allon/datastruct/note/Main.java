@@ -2,6 +2,7 @@ package com.allon.datastruct.note;
 
 import com.allon.datastruct.note.list.linkedlist.LinkedList;
 import com.allon.datastruct.note.list.sequencelist.SqList;
+import com.allon.datastruct.note.queue.SqQueue;
 import com.allon.datastruct.note.stack.Stack;
 
 public class Main {
@@ -9,19 +10,42 @@ public class Main {
     public static void main(String[] args) {
 //        sqList();
 //        linkList();
+//        stackTest();
+
+        queneTest();
+
+
+    }
+
+    private static void queneTest() {
+        SqQueue<Integer> sqQueue = new SqQueue<>();
+        sqQueue.enQuene(1);
+        sqQueue.enQuene(2);
+        sqQueue.enQuene(3);
+        sqQueue.enQuene(4);
+        sqQueue.enQuene(5);
+        System.out.println("sqQueue size = " + sqQueue.size());
+        System.out.println("dequeue = "+ sqQueue.deQueue());
+        System.out.println("dequeue = "+ sqQueue.deQueue());
+        System.out.println("dequeue = "+ sqQueue.deQueue());
+        System.out.println("dequeue = "+ sqQueue.deQueue());
+        System.out.println("dequeue = "+ sqQueue.deQueue());
+        System.out.println("sqQueue size = " + sqQueue.size());
+    }
+
+    private static void stackTest() {
         Stack<Integer> stack = new Stack<>();
         stack.push(1);
         stack.push(2);
         stack.push(3);
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+        stack.push(6);
         System.out.println("size = " + stack.size());
-        stack.pop();
-        stack.pop();
-        stack.pop();
+        System.out.println("pop elememt = "+ stack.pop());
+        System.out.println("pop elememt = "+ stack.pop());
+        System.out.println("pop elememt = "+ stack.pop());
         System.out.println("size = " + stack.size());
-
     }
 
     private static void linkList() {
