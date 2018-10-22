@@ -5,6 +5,8 @@ import com.allon.datastruct.note.list.linkedlist.LinkedList;
 import com.allon.datastruct.note.list.sequencelist.SqList;
 import com.allon.datastruct.note.queue.SqQueue;
 import com.allon.datastruct.note.sort.BubbleSort;
+import com.allon.datastruct.note.sort.SelectionSort;
+import com.allon.datastruct.note.sort.StraightInsertionSort;
 import com.allon.datastruct.note.stack.Stack;
 
 import java.util.Arrays;
@@ -22,8 +24,12 @@ public class Main {
 //        queneTest();
 //        queueTest();
         System.out.println("f(5) = " + f(5));
-        int[] datas = {8,5,1,2,4,6,22,23,9,56,98};
-        BubbleSort.sort(datas);
+        int[] datas = {1,9,5,8,3,7,4,6,2};
+//        BubbleSort.sort(datas);
+//        SelectionSort.simpleSelectionSort(datas);
+        System.out.println("-----------------------------------");
+        int[] a = {1,9,5,8,3,7,4,6,2};
+        StraightInsertionSort.sort1(a, a.length);
     }
 
 
