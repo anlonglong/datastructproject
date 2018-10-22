@@ -4,6 +4,13 @@ import java.util.Arrays;
 
 public class SelectionSort {
 
+    /**
+     *
+     *  时间复杂度为：O(n2)
+     *
+     * @param datas 待排序的数据
+     */
+
     public static void simpleSelectionSort(int[] datas) {
         System.out.println("原始数据 = "+Arrays.toString(datas));
         for (int i = 0; i < datas.length; i++) {
