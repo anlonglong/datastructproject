@@ -4,11 +4,15 @@ import com.allon.datastruct.note.linkquene.LinkQuene;
 import com.allon.datastruct.note.list.linkedlist.LinkedList;
 import com.allon.datastruct.note.list.sequencelist.SqList;
 import com.allon.datastruct.note.queue.SqQueue;
+import com.allon.datastruct.note.sort.BubbleSort;
 import com.allon.datastruct.note.stack.Stack;
 
-import java.util.Queue;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
+
+    private static Scanner scanner;
 
     public static void main(String[] args) {
 //        sqList();
@@ -16,6 +20,39 @@ public class Main {
 //        stackTest();
 
 //        queneTest();
+//        queueTest();
+        System.out.println("f(5) = " + f(5));
+        int[] datas = {8,5,1,2,4,6,22,23,9,56,98};
+        BubbleSort.sort(datas);
+    }
+
+
+    public static int f(int stepNumbs) {
+        if (stepNumbs == 1) return 1;
+        if (stepNumbs == 2) return 2;
+        return f(stepNumbs - 1) + f(stepNumbs - 2);
+
+    }
+
+    public static void bubbleSort(int[] datas) {
+
+        for (int i = 0; i < datas.length; i++) {
+            boolean flag = false;
+            for (int j = 0; j < datas.length -1 -i; j++) {              
+                 if (datas[j] > datas[j + 1]) {
+                     int temp = datas[j];
+                     datas[j] = datas[j+1];
+                     datas[j+1] = temp;
+                     flag = true;
+                 }
+                 if (!flag) break;
+            }
+        }
+    }
+
+
+
+    private static void queueTest() {
         LinkQuene<Integer> linkQuene = new LinkQuene<>();
         linkQuene.enQueue(1);
         linkQuene.enQueue(2);
@@ -26,6 +63,7 @@ public class Main {
         System.out.println("linkQuene.deQueue() = " + linkQuene.deQueue());
         System.out.println("linkQuene.deQueue() = " + linkQuene.deQueue());
         System.out.println("linkQuene.deQueue() = " + linkQuene.deQueue());
+        "".indexOf("");
     }
 
     private static void queneTest() {
